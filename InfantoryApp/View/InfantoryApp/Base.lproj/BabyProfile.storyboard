@@ -3,12 +3,13 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Baby Profile-->
         <scene sceneID="HZQ-vI-pd9">
             <objects>
                 <viewController id="q96-um-9dc" customClass="BabyProfileController" customModule="InfantoryApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -27,7 +28,9 @@
                         <viewLayoutGuide key="safeArea" id="W1J-ft-LO2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="T5k-UI-doP"/>
+                    <tabBarItem key="tabBarItem" title="Baby Profile" id="T5k-UI-doP">
+                        <imageReference key="image" image="person.circle.fill" catalog="system" renderingMode="template"/>
+                    </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="TnN-TG-pHC" kind="show" identifier="BabyProfileFormSegue" id="mU4-9m-Orm"/>
@@ -49,6 +52,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

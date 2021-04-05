@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Vaccine List-->
         <scene sceneID="UUS-he-J2t">
             <objects>
                 <viewController id="KsQ-Wb-oR2" customClass="VaccineListController" customModule="InfantoryApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -27,7 +27,7 @@
                         <viewLayoutGuide key="safeArea" id="3hf-aA-JRa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="uuM-N3-Qk5"/>
+                    <tabBarItem key="tabBarItem" title="Vaccine List" image="stethoscope" catalog="system" id="uuM-N3-Qk5"/>
                     <connections>
                         <segue destination="fqV-YI-TXk" kind="show" identifier="VaccineListMonthSegue" id="Te8-VK-4DW"/>
                     </connections>
@@ -48,6 +48,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="stethoscope" catalog="system" width="128" height="96"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

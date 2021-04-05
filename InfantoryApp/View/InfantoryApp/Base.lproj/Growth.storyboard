@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 1-->
+        <!--Growth-->
         <scene sceneID="Y2f-lv-Afy">
             <objects>
                 <viewController id="6Xs-Qc-3Ih" customClass="GrowthController" customModule="InfantoryApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -27,7 +27,7 @@
                         <viewLayoutGuide key="safeArea" id="iNY-Br-7ez"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="UKQ-nu-ni5"/>
+                    <tabBarItem key="tabBarItem" title="Growth" image="heart.fill" catalog="system" id="UKQ-nu-ni5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PU0-UX-4uF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -35,6 +35,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -29,7 +29,7 @@
         <scene sceneID="OZ0-er-Nmd">
             <objects>
                 <viewControllerPlaceholder storyboardName="VaccineList" id="Jxs-dZ-Glb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ys5-2s-I6Y"/>
+                    <tabBarItem key="tabBarItem" title="Vaccine List" id="ys5-2s-I6Y"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zW4-mS-We3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -39,7 +39,7 @@
         <scene sceneID="IcD-Zt-6lF">
             <objects>
                 <viewControllerPlaceholder storyboardName="BabyProfile" id="22I-hs-eqY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="p05-mt-pit"/>
+                    <tabBarItem key="tabBarItem" title="Baby Profile" id="p05-mt-pit"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rsS-K8-LSb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -49,7 +49,7 @@
         <scene sceneID="0oN-D1-POt">
             <objects>
                 <viewControllerPlaceholder storyboardName="Growth" id="n6W-Ss-n6F" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="fVC-eR-4YS"/>
+                    <tabBarItem key="tabBarItem" title="Growth" id="fVC-eR-4YS"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1QX-At-W7H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
