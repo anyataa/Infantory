@@ -125,9 +125,9 @@
 				0204072B261B4EA70036687E /* BabyProfileController.swift */,
 				0204071B261B4DE00036687E /* GrowthController.swift */,
 				EE8F7D0D261ADFB700FD13AE /* ViewController.swift */,
+				0204073D261B4F160036687E /* VaccineListController.swift */,
 				02040733261B4ED80036687E /* VaccineListMonthController.swift */,
 				02040738261B4EFB0036687E /* VaccineDetailController.swift */,
-				0204073D261B4F160036687E /* VaccineListController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
