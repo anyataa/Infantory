@@ -1,5 +1,5 @@
 //
-//  BabyProfileController.swift
+//  VaccineListController.swift
 //  InfantoryApp
 //
 //  Created by Gilbert Nicholas on 05/04/21.
@@ -7,18 +7,17 @@
 
 import UIKit
 
-class BabyProfileController: UIViewController {
+class VaccineListController: UIViewController {
 
-    @IBAction func tapToAddBaby() {
-        self.performSegue(withIdentifier: "BabyProfileFormSegue", sender: self)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func tap() {
+        self.performSegue(withIdentifier: "VaccineListMonthSegue", sender: self)
+    }
 
     /*
     // MARK: - Navigation
