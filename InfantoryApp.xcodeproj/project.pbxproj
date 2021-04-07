@@ -20,6 +20,8 @@
 		02040739261B4EFB0036687E /* VaccineDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02040738261B4EFB0036687E /* VaccineDetailController.swift */; };
 		0204073E261B4F160036687E /* VaccineListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204073D261B4F160036687E /* VaccineListController.swift */; };
 		02DC391E261B85A60098990A /* BabyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC391D261B85A60098990A /* BabyModel.swift */; };
+		84A7EB44261D0EDA00169FE7 /* VacinneCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A7EB43261D0EDA00169FE7 /* VacinneCardView.swift */; };
+		84A7EB49261D177C00169FE7 /* BabyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A7EB48261D177C00169FE7 /* BabyCardView.swift */; };
 		EE8F7D0A261ADFB700FD13AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8F7D09261ADFB700FD13AE /* AppDelegate.swift */; };
 		EE8F7D0C261ADFB700FD13AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8F7D0B261ADFB700FD13AE /* SceneDelegate.swift */; };
 		EE8F7D0E261ADFB700FD13AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8F7D0D261ADFB700FD13AE /* ViewController.swift */; };
@@ -62,6 +64,8 @@
 		02040738261B4EFB0036687E /* VaccineDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineDetailController.swift; sourceTree = "<group>"; };
 		0204073D261B4F160036687E /* VaccineListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineListController.swift; sourceTree = "<group>"; };
 		02DC391D261B85A60098990A /* BabyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyModel.swift; sourceTree = "<group>"; };
+		84A7EB43261D0EDA00169FE7 /* VacinneCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacinneCardView.swift; sourceTree = "<group>"; };
+		84A7EB48261D177C00169FE7 /* BabyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyCardView.swift; sourceTree = "<group>"; };
 		EE8F7D06261ADFB700FD13AE /* InfantoryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfantoryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE8F7D09261ADFB700FD13AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE8F7D0B261ADFB700FD13AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +176,8 @@
 				EE8F7D17261ADFB800FD13AE /* LaunchScreen.storyboard */,
 				EE8F7D1A261ADFB800FD13AE /* Info.plist */,
 				EE8F7D12261ADFB700FD13AE /* InfantoryApp.xcdatamodeld */,
+				84A7EB43261D0EDA00169FE7 /* VacinneCardView.swift */,
+				84A7EB48261D177C00169FE7 /* BabyCardView.swift */,
 			);
 			path = InfantoryApp;
 			sourceTree = "<group>";
@@ -331,10 +337,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE8F7D14261ADFB700FD13AE /* InfantoryApp.xcdatamodeld in Sources */,
+				84A7EB49261D177C00169FE7 /* BabyCardView.swift in Sources */,
 				EE8F7D0E261ADFB700FD13AE /* ViewController.swift in Sources */,
 				EE8F7D0A261ADFB700FD13AE /* AppDelegate.swift in Sources */,
 				0204073E261B4F160036687E /* VaccineListController.swift in Sources */,
 				02040714261B4DBE0036687E /* BabyProfileFormController.swift in Sources */,
+				84A7EB44261D0EDA00169FE7 /* VacinneCardView.swift in Sources */,
 				02040739261B4EFB0036687E /* VaccineDetailController.swift in Sources */,
 				02DC391E261B85A60098990A /* BabyModel.swift in Sources */,
 				02040734261B4ED80036687E /* VaccineListMonthController.swift in Sources */,

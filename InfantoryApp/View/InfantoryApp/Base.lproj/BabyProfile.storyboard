@@ -17,16 +17,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Baby Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ac8-uS-TzM">
-                                <rect key="frame" x="162" y="438" width="91" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S0i-cj-y0s">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Baby's Profile" id="Te1-aT-9lk">
+                                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="a0u-aM-aes"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Scf-NQ-leu" customClass="BabyCardView" customModule="InfantoryApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="108" width="374" height="175"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uyC-Bj-a9v">
+                                        <rect key="frame" x="20" y="20" width="135" height="135"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="135" id="Qpk-DR-ib2"/>
+                                            <constraint firstAttribute="width" secondItem="uyC-Bj-a9v" secondAttribute="height" multiplier="1:1" id="iYw-Fm-MM3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Baby's Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAN-xx-r4h">
+                                        <rect key="frame" x="175" y="47" width="121" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lkr-vf-TO5">
+                                        <rect key="frame" x="175" y="79" width="92" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2C1-Ix-iqi">
+                                        <rect key="frame" x="175" y="107" width="54" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="KAN-xx-r4h" secondAttribute="trailing" constant="78" id="7hW-fs-ZuW"/>
+                                    <constraint firstItem="Lkr-vf-TO5" firstAttribute="top" secondItem="KAN-xx-r4h" secondAttribute="bottom" constant="8" symbolic="YES" id="LCy-91-Xx7"/>
+                                    <constraint firstItem="uyC-Bj-a9v" firstAttribute="top" secondItem="Scf-NQ-leu" secondAttribute="top" constant="20" id="RTR-s5-5DV"/>
+                                    <constraint firstItem="2C1-Ix-iqi" firstAttribute="top" secondItem="Lkr-vf-TO5" secondAttribute="bottom" constant="8" symbolic="YES" id="SqE-bV-IMJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lkr-vf-TO5" secondAttribute="trailing" constant="107" id="Tfc-k8-EpU"/>
+                                    <constraint firstItem="uyC-Bj-a9v" firstAttribute="leading" secondItem="Scf-NQ-leu" secondAttribute="leading" constant="20" id="U35-cy-Dpg"/>
+                                    <constraint firstItem="KAN-xx-r4h" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uyC-Bj-a9v" secondAttribute="trailing" constant="8" symbolic="YES" id="UC3-oB-SNF"/>
+                                    <constraint firstAttribute="bottom" secondItem="2C1-Ix-iqi" secondAttribute="bottom" constant="48" id="X9O-nW-ybz"/>
+                                    <constraint firstItem="2C1-Ix-iqi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uyC-Bj-a9v" secondAttribute="trailing" constant="8" symbolic="YES" id="YLZ-qz-usc"/>
+                                    <constraint firstItem="Lkr-vf-TO5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uyC-Bj-a9v" secondAttribute="trailing" constant="8" symbolic="YES" id="ai2-Ex-1Xq"/>
+                                    <constraint firstAttribute="bottom" secondItem="uyC-Bj-a9v" secondAttribute="bottom" constant="20" id="sLS-if-OWd"/>
+                                    <constraint firstAttribute="trailing" secondItem="2C1-Ix-iqi" secondAttribute="trailing" constant="145" id="x0k-3O-dNv"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="W1J-ft-LO2"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="S0i-cj-y0s" firstAttribute="trailing" secondItem="W1J-ft-LO2" secondAttribute="trailing" id="R9Z-8K-Wyg"/>
+                            <constraint firstItem="Scf-NQ-leu" firstAttribute="leading" secondItem="W1J-ft-LO2" secondAttribute="leading" constant="20" id="T6U-J6-gBG"/>
+                            <constraint firstItem="S0i-cj-y0s" firstAttribute="leading" secondItem="W1J-ft-LO2" secondAttribute="leading" id="U8B-KW-NeN"/>
+                            <constraint firstItem="S0i-cj-y0s" firstAttribute="top" secondItem="W1J-ft-LO2" secondAttribute="top" id="d9P-Sx-xTj"/>
+                            <constraint firstItem="Scf-NQ-leu" firstAttribute="leading" secondItem="W1J-ft-LO2" secondAttribute="leading" constant="20" id="iuc-g0-8dB"/>
+                            <constraint firstItem="W1J-ft-LO2" firstAttribute="trailing" secondItem="Scf-NQ-leu" secondAttribute="trailing" constant="20" id="kOv-3B-jLQ"/>
+                            <constraint firstItem="W1J-ft-LO2" firstAttribute="bottom" secondItem="Scf-NQ-leu" secondAttribute="bottom" constant="530" id="kQK-b7-g18"/>
+                            <constraint firstItem="Scf-NQ-leu" firstAttribute="top" secondItem="S0i-cj-y0s" secondAttribute="bottom" constant="20" id="kwy-xI-Gji"/>
+                            <constraint firstItem="W1J-ft-LO2" firstAttribute="trailing" secondItem="Scf-NQ-leu" secondAttribute="trailing" constant="20" id="mAL-aL-nV0"/>
+                            <constraint firstItem="S0i-cj-y0s" firstAttribute="centerX" secondItem="Scf-NQ-leu" secondAttribute="centerX" id="rr2-XS-HaL"/>
+                            <constraint firstItem="Scf-NQ-leu" firstAttribute="top" secondItem="S0i-cj-y0s" secondAttribute="bottom" constant="20" id="uCi-Bu-X8y"/>
+                            <constraint firstItem="S0i-cj-y0s" firstAttribute="top" secondItem="W1J-ft-LO2" secondAttribute="top" id="vAw-Ol-reL"/>
+                            <constraint firstItem="S0i-cj-y0s" firstAttribute="leading" secondItem="W1J-ft-LO2" secondAttribute="leading" id="y4U-BG-7C5"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Baby Profile" id="T5k-UI-doP">
                         <imageReference key="image" image="person.circle.fill" catalog="system" renderingMode="template"/>
@@ -38,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rhW-6W-Ua7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-271" y="940"/>
+            <point key="canvasLocation" x="-271.01449275362319" y="939.50892857142856"/>
         </scene>
         <!--BabyProfileForm-->
         <scene sceneID="p3y-8A-du2">
@@ -53,8 +114,12 @@
     </scenes>
     <resources>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
