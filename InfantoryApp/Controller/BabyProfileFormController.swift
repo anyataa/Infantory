@@ -28,15 +28,23 @@ class BabyProfileFormController: UIViewController {
     
 // Navigation Bar Outlets
     @IBOutlet weak var addChildNavBar: UINavigationBar!
-    @IBOutlet weak var cancelButton: UINavigationItem!
-    @IBOutlet weak var doneButton: UINavigationItem!
     
 // Add Photo Outlets
     @IBOutlet weak var imageAddChild: UIImageView!
     @IBOutlet weak var addPhotoButton: UIButton!
     
-// Table View Outlets
-    @IBOutlet weak var tableViewAddChild: UITableView!
+// Label Outlets
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var birthdayLabel: UILabel!
+    @IBOutlet weak var genderLabel: UILabel!
+    
+// Text Field
+    @IBAction func addBabyName(_ sender: Any) {
+    }
+    @IBAction func birthdayField(_ sender: Any) {
+    }
+    @IBAction func genderPicker(_ sender: Any) {
+    }
     
 // Navigation Bar Actions
     @IBAction func cancelButton(_ sender: Any) {
@@ -48,6 +56,5 @@ class BabyProfileFormController: UIViewController {
     @IBAction func addPhotoButton(_ sender: Any) {
     }
     
-// Table View Actions
     
 }
