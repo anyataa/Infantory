@@ -11,8 +11,12 @@ class VaccineListController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func tap() {
+        self.performSegue(withIdentifier: "VaccineListMonthSegue", sender: self)
     }
 
     /*
