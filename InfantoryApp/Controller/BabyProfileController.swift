@@ -9,6 +9,10 @@ import UIKit
 
 class BabyProfileController: UIViewController {
 
+    @IBAction func tapToAddBaby() {
+        self.performSegue(withIdentifier: "BabyProfileFormSegue", sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
