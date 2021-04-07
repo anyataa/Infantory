@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="vaccineListTableViewCell" rowHeight="86" id="AKu-HT-Ns9" customClass="VaccineListTableViewCell" customModule="InfantoryApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="vaccineListTableViewCell" focusStyle="custom" rowHeight="86" id="AKu-HT-Ns9" customClass="VaccineListTableViewCell" customModule="InfantoryApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="390" height="86"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AKu-HT-Ns9" id="b3g-1e-0R0">
@@ -67,6 +67,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="VaccineListTableView" destination="EQ1-nC-Z39" id="ZWQ-y5-RKY"/>
+                        <outlet property="vaccineListTableView" destination="EQ1-nC-Z39" id="3hr-fN-v6U"/>
                         <segue destination="fqV-YI-TXk" kind="show" identifier="VaccineListMonthSegue" id="Te8-VK-4DW"/>
                     </connections>
                 </viewController>

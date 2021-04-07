@@ -7,10 +7,10 @@
 
 import UIKit
 
-class VaccineListController: UIViewController, UITableViewDataSource {
+class VaccineListController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let months: [Month] = Month.generateAllMonth()
-    
+    let previousIndex = -1
 
     @IBOutlet weak var vaccineListTableView: UITableView!
     
@@ -19,6 +19,7 @@ class VaccineListController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         vaccineListTableView.dataSource = self
+        vaccineListTableView.delegate  = self
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -53,7 +54,7 @@ class VaccineListController: UIViewController, UITableViewDataSource {
         }
         return vaccines
     }
-
+    
     /*
     // MARK: - Navigation
 
