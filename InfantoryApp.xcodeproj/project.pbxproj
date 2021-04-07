@@ -31,6 +31,8 @@
 		EE8F7D19261ADFB800FD13AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8F7D17261ADFB800FD13AE /* LaunchScreen.storyboard */; };
 		EE8F7D24261ADFB800FD13AE /* InfantoryAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8F7D23261ADFB800FD13AE /* InfantoryAppTests.swift */; };
 		EE8F7D2F261ADFB800FD13AE /* InfantoryAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8F7D2E261ADFB800FD13AE /* InfantoryAppUITests.swift */; };
+		EEC57572261CACCF00BB6A28 /* MonthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC57571261CACCF00BB6A28 /* MonthModel.swift */; };
+		EEC57577261CAE4200BB6A28 /* VaccineListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC57576261CAE4200BB6A28 /* VaccineListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		EE8F7D2A261ADFB800FD13AE /* InfantoryAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfantoryAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE8F7D2E261ADFB800FD13AE /* InfantoryAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfantoryAppUITests.swift; sourceTree = "<group>"; };
 		EE8F7D30261ADFB800FD13AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEC57571261CACCF00BB6A28 /* MonthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthModel.swift; sourceTree = "<group>"; };
+		EEC57576261CAE4200BB6A28 /* VaccineListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 				0204073D261B4F160036687E /* VaccineListController.swift */,
 				02040733261B4ED80036687E /* VaccineListMonthController.swift */,
 				02040738261B4EFB0036687E /* VaccineDetailController.swift */,
+				EEC57576261CAE4200BB6A28 /* VaccineListTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				02DC391D261B85A60098990A /* BabyModel.swift */,
+				EEC57571261CACCF00BB6A28 /* MonthModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -337,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE8F7D14261ADFB700FD13AE /* InfantoryApp.xcdatamodeld in Sources */,
+				EEC57577261CAE4200BB6A28 /* VaccineListTableViewCell.swift in Sources */,
 				84A7EB49261D177C00169FE7 /* BabyCardView.swift in Sources */,
 				EE8F7D0E261ADFB700FD13AE /* ViewController.swift in Sources */,
 				EE8F7D0A261ADFB700FD13AE /* AppDelegate.swift in Sources */,
@@ -344,6 +351,7 @@
 				02040714261B4DBE0036687E /* BabyProfileFormController.swift in Sources */,
 				84A7EB44261D0EDA00169FE7 /* VacinneCardView.swift in Sources */,
 				02040739261B4EFB0036687E /* VaccineDetailController.swift in Sources */,
+				EEC57572261CACCF00BB6A28 /* MonthModel.swift in Sources */,
 				02DC391E261B85A60098990A /* BabyModel.swift in Sources */,
 				02040734261B4ED80036687E /* VaccineListMonthController.swift in Sources */,
 				0204072C261B4EA70036687E /* BabyProfileController.swift in Sources */,
