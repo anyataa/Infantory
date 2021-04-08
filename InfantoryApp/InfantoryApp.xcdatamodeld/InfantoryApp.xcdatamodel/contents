@@ -1,4 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Baby" representedClassName="Baby" syncable="YES" codeGenerationType="class">
+        <attribute name="babyId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="dateOfBirth" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="photo" optional="YES" attributeType="String"/>
+        <relationship name="babyPhoto" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BabyPhoto" inverseName="baby" inverseEntity="BabyPhoto"/>
+        <relationship name="vaccineRecieved" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="VaccineRecieved" inverseName="baby" inverseEntity="VaccineRecieved"/>
+    </entity>
+    <entity name="BabyPhoto" representedClassName="BabyPhoto" syncable="YES" codeGenerationType="class">
+        <attribute name="babyId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="month" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="photoId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="baby" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Baby" inverseName="babyPhoto" inverseEntity="Baby"/>
+    </entity>
+    <entity name="VaccineRecieved" representedClassName="VaccineRecieved" syncable="YES" codeGenerationType="class">
+        <attribute name="babyId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="vaccineId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="baby" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Baby" inverseName="vaccineRecieved" inverseEntity="Baby"/>
+    </entity>
+    <elements>
+        <element name="VaccineRecieved" positionX="-54" positionY="-9" width="128" height="89"/>
+        <element name="Baby" positionX="-36" positionY="9" width="128" height="134"/>
+        <element name="BabyPhoto" positionX="-18" positionY="54" width="128" height="89"/>
+    </elements>
 </model>
