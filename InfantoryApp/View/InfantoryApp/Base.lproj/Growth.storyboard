@@ -99,18 +99,27 @@
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V4M-Rt-ng9">
-                                                                            <rect key="frame" x="43" y="53.666666666666657" width="42" height="21"/>
+                                                                            <rect key="frame" x="43" y="43.666666666666664" width="42" height="20.999999999999993"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmY-4J-D5w">
+                                                                            <rect key="frame" x="43" y="65.666666666666671" width="42" height="21"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
                                                                     <constraints>
-                                                                        <constraint firstItem="V4M-Rt-ng9" firstAttribute="centerY" secondItem="qVl-rf-e4H" secondAttribute="centerY" id="nkM-ba-AKv"/>
+                                                                        <constraint firstItem="KmY-4J-D5w" firstAttribute="top" secondItem="V4M-Rt-ng9" secondAttribute="bottom" constant="1" id="160-9m-Gnb"/>
+                                                                        <constraint firstItem="KmY-4J-D5w" firstAttribute="centerX" secondItem="qVl-rf-e4H" secondAttribute="centerX" id="WRE-dD-s1W"/>
+                                                                        <constraint firstItem="V4M-Rt-ng9" firstAttribute="centerY" secondItem="qVl-rf-e4H" secondAttribute="centerY" constant="-10" id="nkM-ba-AKv"/>
                                                                         <constraint firstItem="V4M-Rt-ng9" firstAttribute="centerX" secondItem="qVl-rf-e4H" secondAttribute="centerX" id="xOd-xv-eYX"/>
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
                                                                 <connections>
+                                                                    <outlet property="monthConstantLabel" destination="KmY-4J-D5w" id="u4Q-3Q-9Up"/>
                                                                     <outlet property="monthLabel" destination="V4M-Rt-ng9" id="Snk-ex-ie0"/>
                                                                 </connections>
                                                             </collectionViewCell>
