@@ -158,15 +158,15 @@
                     <connections>
                         <outlet property="bgView" destination="pll-YH-oUy" id="e04-jP-ply"/>
                         <outlet property="bottomView" destination="7oW-NW-MNY" id="uHg-Se-5CO"/>
+                        <outlet property="descriptionLabel" destination="Czs-X4-GFC" id="dPL-uK-spr"/>
                         <outlet property="growthCollectionView" destination="WQS-aY-JhY" id="aPp-AN-gZK"/>
                         <outlet property="growthIconImage1" destination="Mua-tD-9Ax" id="wPD-bR-8rT"/>
                         <outlet property="growthIconImage2" destination="xdk-wc-8nu" id="Qlq-T6-iSW"/>
                         <outlet property="growthScrollView" destination="W64-ag-7RR" id="i2C-SE-6h2"/>
                         <outlet property="growthTableLabel" destination="7Wh-KZ-mKV" id="Xac-A5-nSB"/>
                         <outlet property="growthTitle" destination="fJY-zM-6rP" id="c3X-Ko-hop"/>
-                        <outlet property="motorikLabel" destination="5Vi-GL-RPL" id="aYF-qx-cqq"/>
+                        <outlet property="introLabel" destination="5Vi-GL-RPL" id="aYF-qx-cqq"/>
                         <outlet property="profileImage" destination="gBe-Hg-9ky" id="TdN-My-rHS"/>
-                        <outlet property="socioLabel" destination="Czs-X4-GFC" id="dPL-uK-spr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PU0-UX-4uF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

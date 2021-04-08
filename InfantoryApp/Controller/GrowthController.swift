@@ -103,25 +103,24 @@ class GrowthController: UIViewController, UICollectionViewDelegate, UICollection
         
     }
     
-    @IBOutlet weak var motorikLabel: UILabel!
-    @IBOutlet weak var socioLabel: UILabel!
+    @IBOutlet weak var introLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     //    set data for growth info
     let growthData : [growthModel] = growthModel.generateDummy()
     var monthSelected : Int = 0
     
     
     func setGrowthInfo() {
-        motorikLabel.text = growthData[monthSelected].motorik
-        socioLabel.text = growthData[monthSelected
-        ].socio
+        introLabel.text = growthData[monthSelected].intro
+        descriptionLabel.text = growthData[monthSelected
+        ].description
         
+        introLabel.numberOfLines = 0
+        introLabel.font = UIFont(name: "Arial", size: 17)
         
-        motorikLabel.numberOfLines = 0
-        motorikLabel.font = UIFont(name: "Arial", size: 17)
-        
-        socioLabel.numberOfLines = 0
-        socioLabel.font = UIFont(name: "Arial", size: 17)
-        socioLabel.sizeToFit()
+        descriptionLabel.numberOfLines = 0
+        descriptionLabel.font = UIFont(name: "Arial", size: 17)
+        descriptionLabel.sizeToFit()
         
  
     }
