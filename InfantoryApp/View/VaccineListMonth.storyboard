@@ -27,6 +27,9 @@
                                     <segment title="Incomplete"/>
                                     <segment title="Completed"/>
                                 </segments>
+                                <connections>
+                                    <action selector="sortVaccine:" destination="Ska-hc-I8b" eventType="valueChanged" id="6ji-hj-r09"/>
+                                </connections>
                             </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="oEM-PQ-Bez">
                                 <rect key="frame" x="0.0" y="156" width="390" height="630"/>
@@ -47,6 +50,7 @@
                     <navigationItem key="navigationItem" id="Ty3-m4-axc"/>
                     <connections>
                         <outlet property="collectionView" destination="oEM-PQ-Bez" id="I4b-rM-kea"/>
+                        <outlet property="segmentedControl" destination="0Y2-ax-0t8" id="yxZ-Dk-G2J"/>
                         <segue destination="6Fa-Yr-HOk" kind="presentation" identifier="VaccineDetailSegue" id="hqh-PA-uUX"/>
                     </connections>
                 </viewController>

@@ -32,8 +32,14 @@ struct Month{
         ]
     }
     
-    static func generateOneMonth() -> Month {
-        return
-            Month(id: 1, icon:"icon_month_1", name: "First Month", vaccineList: ["Vaccine A", "Vaccine B", "Vaccine C", "Vaccine D"])
-    }
+//    static func generateOneMonth(_ moon:Int) -> Month {
+//        let months = generateAllMonth()
+//        let selectedMonth: Month = Month(id: 12, icon:"icon_month_12", name: "Twelfth Month", vaccineList: ["Vaccine A", "Vaccine B", "Vaccine C", "Vaccine D"])
+//        for month in months {
+//            if month.id == moon {
+//                return month
+//            }
+//        }
+//        return selectedMonth
+//    }
 }

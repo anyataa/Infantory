@@ -60,15 +60,18 @@ class VaccineListController: UIViewController, UITableViewDataSource, UITableVie
     @IBAction func tap() {
         self.performSegue(withIdentifier: "VaccineListMonthSegue", sender: self)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vaccMonth = segue.destination as? VaccineListMonthController {
+            vaccMonth.currMonthPassed = 1
+        }
+    }
 
     /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
+   
     */
 
 }
