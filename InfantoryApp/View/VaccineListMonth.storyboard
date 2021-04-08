@@ -28,18 +28,31 @@
                                     <segment title="Completed"/>
                                 </segments>
                             </segmentedControl>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="oEM-PQ-Bez">
+                                <rect key="frame" x="0.0" y="156" width="390" height="630"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="15" minimumInteritemSpacing="0.0" id="PUt-bB-3qr">
+                                    <size key="itemSize" width="390" height="69"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vdT-F6-wKl"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ty3-m4-axc"/>
                     <connections>
-                        <segue destination="6Fa-Yr-HOk" kind="show" identifier="VaccineDetailSegue" id="hqh-PA-uUX"/>
+                        <outlet property="collectionView" destination="oEM-PQ-Bez" id="I4b-rM-kea"/>
+                        <segue destination="6Fa-Yr-HOk" kind="presentation" identifier="VaccineDetailSegue" id="hqh-PA-uUX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Zg-KH-JZV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1705.7971014492755" y="559.82142857142856"/>
+            <point key="canvasLocation" x="1704.6153846153845" y="559.47867298578194"/>
         </scene>
         <!--VaccineDetail-->
         <scene sceneID="OHo-xb-hTc">
