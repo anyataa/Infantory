@@ -12,6 +12,7 @@ class VaccineListTableViewCell: UITableViewCell {
     @IBOutlet weak var iconMonth: UIImageView!
     @IBOutlet weak var monthTitle: UILabel!
     @IBOutlet weak var vaccineList: UILabel!
+    @IBOutlet weak var overdueLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

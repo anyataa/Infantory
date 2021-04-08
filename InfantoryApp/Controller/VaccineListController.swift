@@ -38,6 +38,7 @@ class VaccineListController: UIViewController, UITableViewDataSource, UITableVie
 //        cell.iconMonth.image = UIImage(named: currMonth.icon)
         cell.monthTitle.text = currMonth.name
         cell.vaccineList.text = getVaccines(vaccineList: currMonth.vaccineList)
+        cell.overdueLabel.text = "!"
         cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
         return cell
     }
