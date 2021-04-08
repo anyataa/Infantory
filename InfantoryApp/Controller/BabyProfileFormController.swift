@@ -38,9 +38,13 @@ class BabyProfileFormController: UIViewController {
     @IBOutlet weak var birthdayLabel: UILabel!
     @IBOutlet weak var genderLabel: UILabel!
     
-// Text Field
+// Text Field Outlets
+    @IBOutlet weak var addBabyName: UITextField!
+    
+// Text Field Actions
     @IBAction func addBabyName(_ sender: Any) {
     }
+    
     @IBAction func birthdayField(_ sender: Any) {
     }
     @IBAction func genderPicker(_ sender: Any) {
@@ -48,13 +52,13 @@ class BabyProfileFormController: UIViewController {
     
 // Navigation Bar Actions
     @IBAction func cancelButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     @IBAction func doneButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
 // Add Photo Actions
     @IBAction func addPhotoButton(_ sender: Any) {
-    }
-    
-    
+        }
 }

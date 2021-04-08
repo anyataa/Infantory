@@ -23,8 +23,9 @@
                                     <navigationItem title="Add Child" id="zQZ-V3-B2j">
                                         <barButtonItem key="leftBarButtonItem" style="plain" id="3ZE-le-BlX">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="OIm-iQ-rua">
-                                                <rect key="frame" x="16" y="7" width="92" height="30"/>
+                                                <rect key="frame" x="16" y="5.6666666666666679" width="92" height="33"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="Cancel"/>
                                                 <connections>
                                                     <action selector="cancelButton:" destination="goY-Rk-jcL" eventType="touchUpInside" id="wlv-7P-Hwy"/>
@@ -33,8 +34,9 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" style="plain" id="4NF-fA-hdD">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Uat-nM-441">
-                                                <rect key="frame" x="282" y="7" width="92" height="30"/>
+                                                <rect key="frame" x="282" y="5.6666666666666679" width="92" height="33"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="Done"/>
                                                 <connections>
                                                     <action selector="doneButton:" destination="goY-Rk-jcL" eventType="touchUpInside" id="vaQ-en-zRs"/>
@@ -47,6 +49,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.crop.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Yxu-PT-BUx">
                                 <rect key="frame" x="120" y="95" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.8049772382" green="0.94080662729999998" blue="0.96078950169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q38-gv-lA8">
                                 <rect key="frame" x="159" y="253" width="72" height="30"/>
@@ -77,46 +80,40 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Type here.." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DsS-hh-qoN">
-                                <rect key="frame" x="115" y="323" width="255" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type here.." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DsS-hh-qoN">
+                                <rect key="frame" x="115" y="324" width="255" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                                <color key="textColor" systemColor="systemGray2Color"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Dyr-B9-6OY" appends="YES" id="dYI-SI-THy"/>
+                                    <action selector="addBabyName:" destination="b4V-lc-Ael" eventType="editingDidEnd" id="CCL-LD-Hjh"/>
+                                    <action selector="addBabyName:" destination="goY-Rk-jcL" eventType="editingDidEnd" id="t8N-Tu-Zg9"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="dd/mm/yyyy" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="n7z-UN-np6">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="dd/mm/yyyy" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="n7z-UN-np6">
                                 <rect key="frame" x="115" y="367" width="255" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                                <color key="textColor" systemColor="systemGray2Color"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="lxW-ka-c3v" appends="YES" id="DeX-Oq-Jht"/>
-                                </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Boy/Girl" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Ft-M6-lHi">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Boy/Girl" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Ft-M6-lHi">
                                 <rect key="frame" x="115" y="410" width="255" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                                <color key="textColor" systemColor="systemGray2Color"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="a4E-Rk-ZMN" appends="YES" id="59D-Fn-dum"/>
-                                </connections>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Hh6-d0-qGh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" red="0.073579065499999999" green="0.50880908970000005" blue="0.56471651789999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="addBabyName" destination="DsS-hh-qoN" id="o2O-V0-Cx1"/>
                         <outlet property="addChildNavBar" destination="qrg-rO-nul" id="6HW-ik-hQ1"/>
                         <outlet property="addPhotoButton" destination="Q38-gv-lA8" id="aj2-gs-x6m"/>
                         <outlet property="birthdayLabel" destination="VUM-D0-akf" id="mWe-7z-ufh"/>
@@ -126,21 +123,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b4V-lc-Ael" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Dyr-B9-6OY">
-                    <connections>
-                        <action selector="addBabyName:" destination="goY-Rk-jcL" id="PE3-Hp-zWw"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="lxW-ka-c3v">
-                    <connections>
-                        <action selector="birthdayField:" destination="goY-Rk-jcL" id="oLL-SM-XTB"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="a4E-Rk-ZMN">
-                    <connections>
-                        <action selector="genderPicker:" destination="goY-Rk-jcL" id="7PN-2b-czZ"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="629.23076923076917" y="939.09952606635068"/>
         </scene>
@@ -149,9 +131,6 @@
         <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
