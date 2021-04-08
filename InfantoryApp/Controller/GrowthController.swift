@@ -9,7 +9,25 @@ import UIKit
 
 
 
-class GrowthController: UIViewController {
+class GrowthController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    
+    @IBOutlet weak var growthCollectionView: UICollectionView!
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return growthModel.generateDummy().count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let growthCell = collectionView.dequeueReusableCell(withReuseIdentifier: "growthCell", for: indexPath) as! GrowthCollectionViewCell
+        
+        growthCell.configGrowthCell(with: (indexPath.row+1) )
+        growthCell.backgroundColor = UIColor.primary
+        
+        return growthCell
+    }
+    
 
     
     
@@ -28,6 +46,10 @@ class GrowthController: UIViewController {
         
         setUI()
         setGrowthInfo()
+        
+        growthCollectionView.dataSource = self
+        growthCollectionView.delegate = self
+       
         
     }
     
@@ -108,20 +130,6 @@ class GrowthController: UIViewController {
     
     
 
-}
-
-
-extension UIImage{
-    var roundedImage: UIImage {
-        let rect = CGRect(origin:CGPoint(x: 0, y: 0), size: self.size)
-        UIGraphicsBeginImageContextWithOptions(self.size, false, 1)
-        UIBezierPath(
-            roundedRect: rect,
-            cornerRadius: 100
-            ).addClip()
-        self.draw(in: rect)
-        return UIGraphicsGetImageFromCurrentImageContext()!
-    }
 }
 
 
