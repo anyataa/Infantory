@@ -9,8 +9,15 @@ import UIKit
 
 class VaccineDetailController: UIViewController {
 
+    @IBOutlet weak var dateField: UITextField!
+    
+    let datePicker = UIDatePicker()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        dateField.text = "mm/dd/yy"
+        createDatePicker()
 
         // Do any additional setup after loading the view.
     }
@@ -19,6 +26,33 @@ class VaccineDetailController: UIViewController {
          self.dismiss(animated: true, completion: nil)
     } 
     
+    func createDatePicker() {
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePressed))
+        
+        toolbar.setItems([doneBtn], animated: true)
+        
+        dateField.inputAccessoryView = toolbar
+        
+        dateField.inputView = datePicker
+        
+        datePicker.datePickerMode = .date
+        
+        datePicker.preferredDatePickerStyle = .wheels
+        
+    }
+    
+    @objc func donePressed() {
+        let formatter = DateFormatter()
+//        formatter.dateStyle = .medium
+        formatter.dateFormat = "MM/dd/yy"
+//        formatter.timeStyle = .none
+        
+        dateField.text = formatter.string(from: datePicker.date)
+        self.view.endEditing(true)
+    }
 
     /*
     // MARK: - Navigation
