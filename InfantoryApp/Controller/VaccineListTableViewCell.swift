@@ -21,9 +21,13 @@ class VaccineListTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        var color = UIColor.white
+        if selected {
+            color = UIColor.secondary!
+        }
+        contentView.backgroundColor = color
+        
         // Configure the view for the selected state
     }
-
-
+    
 }
