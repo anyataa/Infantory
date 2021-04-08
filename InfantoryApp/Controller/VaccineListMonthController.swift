@@ -11,7 +11,8 @@ class VaccineListMonthController: UIViewController, UICollectionViewDataSource, 
     
     @IBOutlet var collectionView: UICollectionView!
     
-    let month: Month = Month.generateOneMonth()
+//    let month: Month = Month.generateOneMonth()
+    var month: Month = Month()
 
     override func viewDidLoad() {
         super.viewDidLoad()
