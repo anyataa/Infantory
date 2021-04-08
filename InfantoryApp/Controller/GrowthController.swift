@@ -31,6 +31,7 @@ class GrowthController: UIViewController {
         
     }
     
+    @IBOutlet weak var growthScrollView: UIScrollView!
     @IBOutlet var bgView: UIView!
     @IBOutlet weak var bottomView : UIView!
     @IBOutlet weak var growthTableLabel : UILabel!
@@ -42,7 +43,9 @@ class GrowthController: UIViewController {
 //        profileImage setUp
         growthTitle.title = "Growth"
         
-        bgView.backgroundColor = #colorLiteral(red: 0.9443226457, green: 0.948993504, blue: 0.9619088769, alpha: 1)
+        growthScrollView.backgroundColor = UIColor.systemGray6
+        
+        bgView.backgroundColor = UIColor.systemGray6
         
         profileImage.image = UIImage(named: "babyImage")
         profileImage.layer.masksToBounds = true
@@ -53,11 +56,13 @@ class GrowthController: UIViewController {
     
         growthIconImage2.image = UIImage(named: "graphGrowth")
         
-        bottomView.layer.cornerRadius = 10
-        
+        bottomView.layer.cornerRadius = 20
+        bottomView.backgroundColor = UIColor.white
         growthTableLabel.text = "Growth"
         growthTableLabel.textColor = #colorLiteral(red: 0.2934505343, green: 0.5710052252, blue: 0.5805695057, alpha: 1)
         growthTableLabel.font = UIFont.boldSystemFont(ofSize: 27)
+        
+        
         
         
         
@@ -77,7 +82,11 @@ class GrowthController: UIViewController {
         
         
         motorikLabel.numberOfLines = 0
+        motorikLabel.font = UIFont(name: "Arial", size: 17)
+        
         socioLabel.numberOfLines = 0
+        socioLabel.font = UIFont(name: "Arial", size: 17)
+        socioLabel.sizeToFit()
         
  
     }

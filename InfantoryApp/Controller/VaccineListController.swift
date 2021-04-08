@@ -17,6 +17,7 @@ class VaccineListController: UIViewController, UITableViewDataSource, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
         vaccineListTableView.dataSource = self
         vaccineListTableView.delegate  = self
@@ -55,6 +56,10 @@ class VaccineListController: UIViewController, UITableViewDataSource, UITableVie
         return vaccines
     }
     
+    @IBAction func tap() {
+        self.performSegue(withIdentifier: "VaccineListMonthSegue", sender: self)
+    }
+
     /*
     // MARK: - Navigation
 
