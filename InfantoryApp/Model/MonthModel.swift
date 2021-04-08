@@ -12,6 +12,8 @@ struct Month{
     var icon: String = ""
     var name: String = ""
     var vaccineList: [String] = []
+    var isCompleted: Bool = false
+    var isOverdue: Bool = false
     
     static func generateAllMonth() -> [Month]{
         return [
