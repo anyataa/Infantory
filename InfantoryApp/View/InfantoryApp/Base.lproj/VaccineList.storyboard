@@ -64,6 +64,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Vaccine List" id="pJb-oO-f4J">
                         <barButtonItem key="backBarButtonItem" title="Vaccine List" id="sKS-KP-akI"/>
+                        <barButtonItem key="rightBarButtonItem" title="NEXT" id="3TO-hm-YsV">
+                            <connections>
+                                <action selector="tap" destination="KsQ-Wb-oR2" id="KI0-S2-Fsn"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="VaccineListTableView" destination="EQ1-nC-Z39" id="ZWQ-y5-RKY"/>

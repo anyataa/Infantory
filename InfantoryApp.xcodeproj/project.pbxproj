@@ -20,6 +20,8 @@
 		02040739261B4EFB0036687E /* VaccineDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02040738261B4EFB0036687E /* VaccineDetailController.swift */; };
 		0204073E261B4F160036687E /* VaccineListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204073D261B4F160036687E /* VaccineListController.swift */; };
 		02DC391E261B85A60098990A /* BabyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC391D261B85A60098990A /* BabyModel.swift */; };
+		02DC3980261DFF460098990A /* VaccineMonthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC397E261DFF460098990A /* VaccineMonthCell.swift */; };
+		02DC3981261DFF460098990A /* VaccineMonthCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02DC397F261DFF460098990A /* VaccineMonthCell.xib */; };
 		84A7EB44261D0EDA00169FE7 /* VacinneCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A7EB43261D0EDA00169FE7 /* VacinneCardView.swift */; };
 		84A7EB49261D177C00169FE7 /* BabyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A7EB48261D177C00169FE7 /* BabyCardView.swift */; };
 		EE8F7D0A261ADFB700FD13AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8F7D09261ADFB700FD13AE /* AppDelegate.swift */; };
@@ -66,6 +68,8 @@
 		02040738261B4EFB0036687E /* VaccineDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineDetailController.swift; sourceTree = "<group>"; };
 		0204073D261B4F160036687E /* VaccineListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineListController.swift; sourceTree = "<group>"; };
 		02DC391D261B85A60098990A /* BabyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyModel.swift; sourceTree = "<group>"; };
+		02DC397E261DFF460098990A /* VaccineMonthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineMonthCell.swift; sourceTree = "<group>"; };
+		02DC397F261DFF460098990A /* VaccineMonthCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VaccineMonthCell.xib; sourceTree = "<group>"; };
 		84A7EB43261D0EDA00169FE7 /* VacinneCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacinneCardView.swift; sourceTree = "<group>"; };
 		84A7EB48261D177C00169FE7 /* BabyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyCardView.swift; sourceTree = "<group>"; };
 		EE8F7D06261ADFB700FD13AE /* InfantoryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfantoryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +141,8 @@
 				02040733261B4ED80036687E /* VaccineListMonthController.swift */,
 				02040738261B4EFB0036687E /* VaccineDetailController.swift */,
 				EEC57576261CAE4200BB6A28 /* VaccineListTableViewCell.swift */,
+				02DC397E261DFF460098990A /* VaccineMonthCell.swift */,
+				02DC397F261DFF460098990A /* VaccineMonthCell.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -311,6 +317,7 @@
 			files = (
 				EE8F7D19261ADFB800FD13AE /* LaunchScreen.storyboard in Resources */,
 				020406F2261B314C0036687E /* VaccineListMonth.storyboard in Resources */,
+				02DC3981261DFF460098990A /* VaccineMonthCell.xib in Resources */,
 				EE8F7D16261ADFB800FD13AE /* Assets.xcassets in Resources */,
 				02040700261B4C1D0036687E /* BabyProfile.storyboard in Resources */,
 				02040705261B4C710036687E /* BabyProfileForm.storyboard in Resources */,
@@ -348,6 +355,7 @@
 				EE8F7D0E261ADFB700FD13AE /* ViewController.swift in Sources */,
 				EE8F7D0A261ADFB700FD13AE /* AppDelegate.swift in Sources */,
 				0204073E261B4F160036687E /* VaccineListController.swift in Sources */,
+				02DC3980261DFF460098990A /* VaccineMonthCell.swift in Sources */,
 				02040714261B4DBE0036687E /* BabyProfileFormController.swift in Sources */,
 				84A7EB44261D0EDA00169FE7 /* VacinneCardView.swift in Sources */,
 				02040739261B4EFB0036687E /* VaccineDetailController.swift in Sources */,
