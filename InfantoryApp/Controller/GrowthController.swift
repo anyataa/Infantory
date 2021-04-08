@@ -24,7 +24,7 @@ class GrowthController: UIViewController, UICollectionViewDelegate, UICollection
         
         growthCell.configGrowthCell(with: (indexPath.row+1) )
         growthCell.backgroundColor = UIColor.primary
-        
+        growthCell.layer.cornerRadius = growthCell.bounds.width/2
         return growthCell
     }
     
@@ -59,6 +59,13 @@ class GrowthController: UIViewController, UICollectionViewDelegate, UICollection
     @IBOutlet weak var growthTableLabel : UILabel!
     @IBOutlet weak var growthTitle : UINavigationItem!
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        CGSize(width: 100, height: 100)
+    }
+    
+    
+    
+    
     
     
     func setUI() {
@@ -69,7 +76,7 @@ class GrowthController: UIViewController, UICollectionViewDelegate, UICollection
         
         bgView.backgroundColor = UIColor.systemGray6
         
-        profileImage.image = UIImage(named: "babyImage")
+        profileImage.image = UIImage(named: "babyProfile")
         profileImage.layer.masksToBounds = true
         profileImage.layer.cornerRadius = profileImage.bounds.width/2
         
@@ -84,6 +91,12 @@ class GrowthController: UIViewController, UICollectionViewDelegate, UICollection
         growthTableLabel.textColor = #colorLiteral(red: 0.2934505343, green: 0.5710052252, blue: 0.5805695057, alpha: 1)
         growthTableLabel.font = UIFont.boldSystemFont(ofSize: 27)
         
+        if let layout = growthCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            layout.scrollDirection = .horizontal
+            
+            
+        }
+      
         
         
         
