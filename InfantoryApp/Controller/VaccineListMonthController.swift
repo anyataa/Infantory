@@ -22,16 +22,14 @@ class VaccineListMonthController: UIViewController, UICollectionViewDataSource, 
         
         collectionView.delegate = self
         collectionView.dataSource = self
-        
-        
-        
+
         // Do any additional setup after loading the view.
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
         
-        print("TAPPED!")
+        self.performSegue(withIdentifier: "VaccineDetailSegue", sender: self)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
