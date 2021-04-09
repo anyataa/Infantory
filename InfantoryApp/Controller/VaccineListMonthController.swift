@@ -10,22 +10,63 @@ import UIKit
 class VaccineListMonthController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet var collectionView: UICollectionView!
-    
-//    let month: Month = Month.generateOneMonth()
+    @IBOutlet var segmentedControl: UISegmentedControl!
+
+    var allVaccineMonth: [Vaccine] = []
+    var trueVaccine: [Vaccine] = []
+    var falseVaccine: [Vaccine] = []
+
     var month: Month = Month()
+    var usedArray: [Vaccine] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        segmentedControl.selectedSegmentIndex = 0
+        
+        initData()
+        
         self.title = month.name
         
-        collectionView.register(VaccineMonthCell.nib(), forCellWithReuseIdentifier: "VaccineMonthCell")
+        initCollectionView()
+    }
+    
+    //    IBAction Function
+    //    ============================================================================
+    
+    @IBAction func sortVaccine(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            usedArray = falseVaccine
+        } else {
+            usedArray = trueVaccine
+        }
+        collectionView.reloadData()
+    }
+    
+    //    Initialize Page
+    //    ============================================================================
+    
+    func initData() {
+        allVaccineMonth = Vaccine.sortVaccine(month.id)
         
+        for vaccine in allVaccineMonth {
+            if vaccine.isTrue == true {
+                trueVaccine.append(vaccine)
+            } else {
+                falseVaccine.append(vaccine)
+            }
+        }
+        usedArray = falseVaccine
+    }
+    
+    func initCollectionView() {
+        collectionView.register(VaccineMonthCell.nib(), forCellWithReuseIdentifier: "VaccineMonthCell")
         collectionView.delegate = self
         collectionView.dataSource = self
-
-        // Do any additional setup after loading the view.
     }
+    
+//    Collection View Function
+//    ============================================================================
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
@@ -34,16 +75,16 @@ class VaccineListMonthController: UIViewController, UICollectionViewDataSource, 
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return month.vaccineList.count
+        return usedArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VaccineMonthCell", for: indexPath) as! VaccineMonthCell
         
-        let currVaccine = month.vaccineList[indexPath.row]
+        let currVaccine = usedArray[indexPath.row]
         
-        cell.setName(with: currVaccine)
+        cell.setName(with: currVaccine.name)
         cell.layer.cornerRadius = 8.0
         
         return cell

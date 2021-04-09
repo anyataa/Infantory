@@ -28,8 +28,6 @@ class GrowthController: UIViewController, UICollectionViewDelegate, UICollection
         return growthCell
     }
     
-
-    
     
     @IBOutlet weak var profileImage: UIImageView!
     
@@ -37,9 +35,7 @@ class GrowthController: UIViewController, UICollectionViewDelegate, UICollection
     
     @IBOutlet weak var growthIconImage1: UIImageView!
     
-    
     @IBOutlet weak var growthIconImage2: UIImageView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +45,6 @@ class GrowthController: UIViewController, UICollectionViewDelegate, UICollection
         
         growthCollectionView.dataSource = self
         growthCollectionView.delegate = self
-       
         
     }
     
@@ -100,14 +95,7 @@ class GrowthController: UIViewController, UICollectionViewDelegate, UICollection
         
         if let layout = growthCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             layout.scrollDirection = .horizontal
-            
-            
         }
-      
-        
-        
-        
-        
     }
     
     @IBOutlet weak var introLabel: UILabel!
@@ -129,26 +117,7 @@ class GrowthController: UIViewController, UICollectionViewDelegate, UICollection
         descriptionLabel.font = UIFont(name: "Arial", size: 17)
         descriptionLabel.sizeToFit()
         
- 
     }
-    
-    
-    
-    
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-    
-
 }
 
 

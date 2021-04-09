@@ -19,6 +19,9 @@
 		02040734261B4ED80036687E /* VaccineListMonthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02040733261B4ED80036687E /* VaccineListMonthController.swift */; };
 		02040739261B4EFB0036687E /* VaccineDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02040738261B4EFB0036687E /* VaccineDetailController.swift */; };
 		0204073E261B4F160036687E /* VaccineListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204073D261B4F160036687E /* VaccineListController.swift */; };
+		026B8344261FF22800339AD6 /* BabyProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B8342261FF22800339AD6 /* BabyProfileCell.swift */; };
+		026B8345261FF22800339AD6 /* BabyProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 026B8343261FF22800339AD6 /* BabyProfileCell.xib */; };
+		029B5BE7261F315B00AA5F36 /* VaccineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029B5BE6261F315B00AA5F36 /* VaccineModel.swift */; };
 		02DC391E261B85A60098990A /* BabyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC391D261B85A60098990A /* BabyModel.swift */; };
 		02DC3980261DFF460098990A /* VaccineMonthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC397E261DFF460098990A /* VaccineMonthCell.swift */; };
 		02DC3981261DFF460098990A /* VaccineMonthCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02DC397F261DFF460098990A /* VaccineMonthCell.xib */; };
@@ -69,6 +72,9 @@
 		02040733261B4ED80036687E /* VaccineListMonthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineListMonthController.swift; sourceTree = "<group>"; };
 		02040738261B4EFB0036687E /* VaccineDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineDetailController.swift; sourceTree = "<group>"; };
 		0204073D261B4F160036687E /* VaccineListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineListController.swift; sourceTree = "<group>"; };
+		026B8342261FF22800339AD6 /* BabyProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyProfileCell.swift; sourceTree = "<group>"; };
+		026B8343261FF22800339AD6 /* BabyProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BabyProfileCell.xib; sourceTree = "<group>"; };
+		029B5BE6261F315B00AA5F36 /* VaccineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineModel.swift; sourceTree = "<group>"; };
 		02DC391D261B85A60098990A /* BabyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyModel.swift; sourceTree = "<group>"; };
 		02DC397E261DFF460098990A /* VaccineMonthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineMonthCell.swift; sourceTree = "<group>"; };
 		02DC397F261DFF460098990A /* VaccineMonthCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VaccineMonthCell.xib; sourceTree = "<group>"; };
@@ -148,6 +154,8 @@
 				02DC397E261DFF460098990A /* VaccineMonthCell.swift */,
 				02DC397F261DFF460098990A /* VaccineMonthCell.xib */,
 				8419D723261EDAC900F2AEA8 /* GrowthCollectionViewCell.swift */,
+				026B8342261FF22800339AD6 /* BabyProfileCell.swift */,
+				026B8343261FF22800339AD6 /* BabyProfileCell.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -158,6 +166,7 @@
 				02DC391D261B85A60098990A /* BabyModel.swift */,
 				EEC57571261CACCF00BB6A28 /* MonthModel.swift */,
 				EE7E87DF261ECA74005976CA /* Color.swift */,
+				029B5BE6261F315B00AA5F36 /* VaccineModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,6 +334,7 @@
 				020406F2261B314C0036687E /* VaccineListMonth.storyboard in Resources */,
 				02DC3981261DFF460098990A /* VaccineMonthCell.xib in Resources */,
 				EE8F7D16261ADFB800FD13AE /* Assets.xcassets in Resources */,
+				026B8345261FF22800339AD6 /* BabyProfileCell.xib in Resources */,
 				02040700261B4C1D0036687E /* BabyProfile.storyboard in Resources */,
 				02040705261B4C710036687E /* BabyProfileForm.storyboard in Resources */,
 				020406FA261B4BB80036687E /* VaccineDetail.storyboard in Resources */,
@@ -362,6 +372,7 @@
 				EE8F7D0A261ADFB700FD13AE /* AppDelegate.swift in Sources */,
 				0204073E261B4F160036687E /* VaccineListController.swift in Sources */,
 				02DC3980261DFF460098990A /* VaccineMonthCell.swift in Sources */,
+				026B8344261FF22800339AD6 /* BabyProfileCell.swift in Sources */,
 				8419D724261EDAC900F2AEA8 /* GrowthCollectionViewCell.swift in Sources */,
 				02040714261B4DBE0036687E /* BabyProfileFormController.swift in Sources */,
 				84A7EB44261D0EDA00169FE7 /* VacinneCardView.swift in Sources */,
@@ -371,6 +382,7 @@
 				02DC391E261B85A60098990A /* BabyModel.swift in Sources */,
 				02040734261B4ED80036687E /* VaccineListMonthController.swift in Sources */,
 				0204072C261B4EA70036687E /* BabyProfileController.swift in Sources */,
+				029B5BE7261F315B00AA5F36 /* VaccineModel.swift in Sources */,
 				0204071C261B4DE00036687E /* GrowthController.swift in Sources */,
 				EE8F7D0C261ADFB700FD13AE /* SceneDelegate.swift in Sources */,
 			);

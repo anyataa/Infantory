@@ -27,11 +27,14 @@
                                     <segment title="Incomplete"/>
                                     <segment title="Completed"/>
                                 </segments>
+                                <connections>
+                                    <action selector="sortVaccine:" destination="Ska-hc-I8b" eventType="valueChanged" id="6ji-hj-r09"/>
+                                </connections>
                             </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="oEM-PQ-Bez">
                                 <rect key="frame" x="0.0" y="156" width="390" height="630"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="15" minimumInteritemSpacing="0.0" id="PUt-bB-3qr">
                                     <size key="itemSize" width="390" height="69"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -42,11 +45,12 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vdT-F6-wKl"/>
-                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ty3-m4-axc"/>
                     <connections>
                         <outlet property="collectionView" destination="oEM-PQ-Bez" id="I4b-rM-kea"/>
+                        <outlet property="segmentedControl" destination="0Y2-ax-0t8" id="yxZ-Dk-G2J"/>
                         <segue destination="6Fa-Yr-HOk" kind="presentation" identifier="VaccineDetailSegue" id="hqh-PA-uUX"/>
                     </connections>
                 </viewController>
@@ -66,8 +70,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
