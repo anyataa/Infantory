@@ -116,6 +116,7 @@
             <point key="canvasLocation" x="542" y="560"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.058823529411764705" green="0.50980392156862742" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
     <resources>
         <image name="stethoscope" catalog="system" width="128" height="96"/>
         <namedColor name="primary">

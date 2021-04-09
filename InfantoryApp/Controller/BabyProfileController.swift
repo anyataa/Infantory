@@ -7,7 +7,9 @@
 
 import UIKit
 
-class BabyProfileController: UIViewController {
+class BabyProfileController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
+    @IBOutlet weak var colView: UICollectionView!
 
     @IBAction func tapToAddBaby() {
         self.performSegue(withIdentifier: "BabyProfileFormSegue", sender: self)
@@ -15,19 +17,43 @@ class BabyProfileController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        initColView()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+//    Initialize Page
+//    ============================================================================
+    
+    func initColView() {
+        colView.register(BabyProfileCell.nib(), forCellWithReuseIdentifier: "BabyProfileCell")
+        colView.delegate = self
+        colView.dataSource = self
     }
-    */
-
+    
+    //    Collection View Function
+    //    ============================================================================
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        
+        self.performSegue(withIdentifier: "BabyProfileFormSegue", sender: self)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BabyProfileCell", for: indexPath) as! BabyProfileCell
+        
+        cell.setName(with: "Didud")
+        cell.layer.cornerRadius = 10.0
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 354, height: 175)
+    }
 }

@@ -12,12 +12,10 @@ class VaccineListMonthController: UIViewController, UICollectionViewDataSource, 
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var segmentedControl: UISegmentedControl!
 
-    var currMonthPassed: Int = 0
     var allVaccineMonth: [Vaccine] = []
     var trueVaccine: [Vaccine] = []
     var falseVaccine: [Vaccine] = []
-    
-//    let month: Month = Month.generateOneMonth()
+
     var month: Month = Month()
     var usedArray: [Vaccine] = []
 
@@ -28,7 +26,7 @@ class VaccineListMonthController: UIViewController, UICollectionViewDataSource, 
         
         initData()
         
-        self.title = allVaccineMonth[0].moonName
+        self.title = month.name
         
         initCollectionView()
     }
@@ -49,8 +47,7 @@ class VaccineListMonthController: UIViewController, UICollectionViewDataSource, 
     //    ============================================================================
     
     func initData() {
-        allVaccineMonth = Vaccine.sortVaccine(currMonthPassed)
-        
+        allVaccineMonth = Vaccine.sortVaccine(month.id)
         
         for vaccine in allVaccineMonth {
             if vaccine.isTrue == true {
