@@ -18,10 +18,10 @@ class GrowthCollectionViewCell: UICollectionViewCell {
     func configGrowthCell( with selectedMonth : Int) {
         monthLabel.text = "\(selectedMonth)"
         monthLabel.font = UIFont.boldSystemFont(ofSize: 17)
-        monthLabel.textColor = UIColor.secondary
+        monthLabel.textColor = UIColor.primary
         
         
-        monthConstantLabel.textColor = UIColor.secondary
+        monthConstantLabel.textColor = UIColor.primary
         monthConstantLabel.text = "Month"
         
     }
