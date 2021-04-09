@@ -32,6 +32,15 @@ class BabyProfileFormController: UIViewController, UIImagePickerControllerDelega
         imagePicker.delegate = self
         imagePicker.allowsEditing = true
         imagePicker.mediaTypes = ["public.image"]
+        
+        makeImageRound()
+    }
+    
+    func makeImageRound() {
+        imageAddChild.layer.masksToBounds = false
+        imageAddChild.layer.borderColor = UIColor.black.cgColor
+        imageAddChild.layer.cornerRadius = imageAddChild.frame.height/2
+        imageAddChild.clipsToBounds = true
     }
     
 // Text Field Actions
@@ -56,7 +65,9 @@ class BabyProfileFormController: UIViewController, UIImagePickerControllerDelega
         self.dismiss(animated: true, completion: nil)
     }
     
-// Add Photo Actions
+//    Add Photo Actions
+//    ==================================================================
+    
     @IBAction func addPhotoButton(_ sender: Any) {
         self.present(imagePicker, animated: true, completion: nil)
     }
