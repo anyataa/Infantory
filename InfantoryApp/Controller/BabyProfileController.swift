@@ -30,8 +30,8 @@ class BabyProfileController: UIViewController, UICollectionViewDataSource, UICol
         colView.dataSource = self
     }
     
-    //    Collection View Function
-    //    ============================================================================
+//    Collection View Function
+//    ============================================================================
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)

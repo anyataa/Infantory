@@ -22,6 +22,14 @@ class BabyProfileCell: UICollectionViewCell {
         babyName.text = name
     }
     
+    public func setDOB(with dob: String) {
+        babyDOB.text = dob
+    }
+    
+    public func setGender(with gender: String) {
+        babyGender.text = gender
+    }
+    
     static func nib() -> UINib {
         return UINib(nibName: "BabyProfileCell", bundle: nil)
     }
