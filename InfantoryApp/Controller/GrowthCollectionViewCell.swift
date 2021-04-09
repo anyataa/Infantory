@@ -9,8 +9,11 @@ import UIKit
 
 class GrowthCollectionViewCell: UICollectionViewCell {
     
+   
     @IBOutlet weak var monthLabel : UILabel!
     @IBOutlet weak var monthConstantLabel : UILabel!
+
+    
     
     func configGrowthCell( with selectedMonth : Int) {
         monthLabel.text = "\(selectedMonth)"
@@ -22,4 +25,8 @@ class GrowthCollectionViewCell: UICollectionViewCell {
         monthConstantLabel.text = "Month"
         
     }
+    
+  
+    
+    
 }

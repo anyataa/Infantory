@@ -10,7 +10,7 @@ import UIKit
 
 
 class GrowthController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
+    var monthSelected : Int = 0
     
     @IBOutlet weak var growthCollectionView: UICollectionView!
     
@@ -57,7 +57,19 @@ class GrowthController: UIViewController, UICollectionViewDelegate, UICollection
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: 80, height: 80)
     }
-
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        print(indexPath.row)
+        self.monthSelected = indexPath.row
+        print("click: \(self.monthSelected)")
+        self.setGrowthInfo()
+        
+    }
+    
+    
+    
     func setUI() {
 //        profileImage setUp
         growthTitle.title = "Growth"
@@ -90,7 +102,7 @@ class GrowthController: UIViewController, UICollectionViewDelegate, UICollection
     @IBOutlet weak var descriptionLabel: UILabel!
     //    set data for growth info
     let growthData : [growthModel] = growthModel.generateDummy()
-    var monthSelected : Int = 0
+    
     
     
     func setGrowthInfo() {
